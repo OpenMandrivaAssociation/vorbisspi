@@ -10,6 +10,7 @@ BuildArch:     noarch
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires: ant
+BuildRequires: java-devel-gcj
 
 %description
 VorbisSPI  is a SPI (Service Provider Interface - or "Driver" for 
