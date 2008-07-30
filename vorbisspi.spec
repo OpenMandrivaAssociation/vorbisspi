@@ -1,7 +1,7 @@
 Name:          vorbisspi
 Summary:       Ogg Vorbis sound engine
 Version:       1.0.2
-Release:       %mkrel 1
+Release:       %mkrel 3
 License:       LGPL
 Group:	       Sound
 Source0:       %name%version.tar.bz2
