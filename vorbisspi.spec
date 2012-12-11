@@ -1,13 +1,12 @@
 Name:          vorbisspi
 Summary:       Ogg Vorbis sound engine
 Version:       1.0.2
-Release:       %mkrel 5
+Release:       2
 License:       LGPL
 Group:	       Sound
 Source0:       %name%version.tar.bz2
 URL: 	       http://www.javazoom.net/vorbisspi/sources.html
 BuildArch:     noarch
-BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires: ant
 BuildRequires: java-devel-gcj
@@ -42,7 +41,7 @@ rm -fr %buildroot
 %setup -q -n VorbisSPI1.0.2
 
 %build
-%{ant} all
+ant all
 
 %install
 install -dm 755 %buildroot%{_javadir}
@@ -57,5 +56,11 @@ install -d %{buildroot}%{_javadocdir}/%{name}-%{version}
 cp -r docs/* %{buildroot}%{_javadocdir}/%{name}-%{version}
 ln -s %{name}-%{version} %{buildroot}%{_javadocdir}/%{name}
 
-%clean
-rm -fr %buildroot
+
+%changelog
+* Sat Dec 15 2007 Nicolas Lécureuil <neoclust@mandriva.org> 1.0.2-1mdv2008.1
++ Revision: 120450
+- Fix BuildRequires
+- import vorbisspi
+
+
