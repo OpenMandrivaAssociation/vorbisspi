@@ -5,7 +5,7 @@ Release:       3
 License:       LGPL
 Group:	       Sound
 Source0:       %name%version.tar.bz2
-URL: 	       http://www.javazoom.net/vorbisspi/sources.html
+URL: 	       https://www.javazoom.net/vorbisspi/sources.html
 BuildArch:     noarch
 
 BuildRequires: ant
